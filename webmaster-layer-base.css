@@ -27,12 +27,6 @@
 /*			in tegenstelling tot topContainerWrapper hier justify-content: space-between							*/
 /*																													*/
 /********************************************************************************************************************/
-		/* TEST DOELEINDEN */
-		#topLineWrapper
-		{
-			background: navy;
-	}
-
 	#topLineWrapper
 	{
 		display: flex;
