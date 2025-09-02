@@ -1,0 +1,82 @@
+/* ============================================================================================================ */
+/*						NON-BLOGGER CSS custom proerties (Variable definitions) START							*/
+/* ============================================================================================================ */
+										
+/*************************************** COMMENTS var() Function ************************************************/
+/* 22-9-2023                                                                                    				*/
+/*																												*/
+/* :root can be useful for declaring global CSS variables:														*/
+/* The :root CSS pseudo-class matches the root element of a tree representing the document.						*/
+/* In HTML, :root represents the html - element and is identical to the selector html,							*/
+/* except that its specificity is higher.																		*/
+/* 																												*/
+/*************************************** COMMENTS var() Function ************************************************/
+:root
+{
+
+	--root-font-family-base: Frutiger, Baskerville, "Segoe UI", sans-serif;
+
+	--root-font-size-base: 1rem; /* 16px */
+	--root-font-size-large: 1.25rem;
+	--root-font-weight-normal: 400;
+	--root-font-weight-bold: 700;
+	--root-color-text: #333;
+	--root-color-bg: AliceBlue;
+
+	--container-items-BG-color: #3399cc;
+	
+}
+
+
+/* ============================================================================================================ */
+/*						NON-BLOGGER CSS custom properties (Variable definitions) END							*/
+/* ============================================================================================================ */
+
+
+/*** BEGIN *** font versus font-family ******************************************************************************/
+/*																													*/
+/*	font																											*/
+/*		is een shorthand die bestaat uit:																			*/
+/*		- font-style (bijv. italic)																					*/
+/*		- font-weight (bijv. bold)																					*/
+/*		- font-size (bijv. 16px)																					*/
+/*		- line-height (bijv. 1.5)																					*/
+/*		- font-family (bijv. "Frutiger", sans-serif)																*/
+/*																													*/
+/*	LET OP: Als je font: gebruikt, moet je minimaal font-size en font-family opgeven — anders is de regel ongeldig.	*/
+/*																													*/
+/*	font-family: 																									*/
+/*		gebruik alleen wanneer je lettertypes wilt instellen (bijv. "Frutiger", sans-serif)							*/
+/*																													*/
+/*		ADVIES: font-family: var(--topLineWrapper-TXT-font, var(--root-TXT-font, "Segoe UI", sans-serif));			*/
+/*																													*/
+/*																													*/
+/*	font-size:																										*/
+/*		gebruik REM																									*/
+/*																													*/
+/*		ADVIES: gebruik REM = root em																				*/
+/*			- CSS-eenheid die staat voor een relatieve maat gebaseerd op de root font-size van je document			*/
+/*			- verwijst naar de font-size van het <html>-element														*/
+/*			- voorbeeld: Als de root font-size = 16px, dan is 1.125rem = 1.125 × 16px = 18px						*/
+/*																													*/
+/*		LET OP: je moet wel de root em definiëren in je HTML														*/
+/*																													*/
+/*	font-family: 																									*/
+/*		- system-ui: standaard UI-font van het besturingssysteem													*/
+/*		Op macOS is dat San Francisco, op Windows is dat Segoe UI, op Android is dat Roboto.						*/
+/*																													*/
+/*	font-weight:																									*/
+/*		bold = 700 voor koppen 																						*/
+/*		normal = 400 voor gewone tekst																				*/
+/*		thin = 100																									*/
+/*																													*/
+/*		LET OP: Te veel gewichten laden kan je site trager maken, vooral als je fonts via Google Fonts haalt.		*/
+/*																													*/
+/*		ADVIES: het is verstandig om bij het laden van fonts alleen maar de gewichten te laden die je gebruikt		*/
+/*		- voor Poppins: 																							*/
+/*		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">	*/
+/*																													*/
+/*		Je zet die <link>-tag in het <head>-gedeelte van je HTML-bestand. Dat zorgt ervoor dat de font wordt 		*/
+/*		geladen voordat je pagina wordt weergegeven, zodat alles er meteen goed uitziet.							*/
+/*																													*/
+/*** BEGIN *** font versus font-family ******************************************************************************/
